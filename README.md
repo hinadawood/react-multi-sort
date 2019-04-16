@@ -30,12 +30,12 @@ You can open `http://127.0.0.1:3333/` in browser.
 Run `npm test` for unit testing the code. There are 12 passing testcases
 
 ##Files Modified
-frontend/components/AssignmentTable/*.js
-frontend/components/Dashboard/Dashboard.js
-frontend/index.js
-frontend/test/AssignmentTable.test.js
-frontend/test/AssignmentTableAction.test.js
-frontend/styles/common.css
+- frontend/components/AssignmentTable/*.js
+- frontend/components/Dashboard/Dashboard.js
+- frontend/index.js
+- frontend/test/AssignmentTable.test.js
+- frontend/test/AssignmentTableAction.test.js
+- frontend/styles/common.css
 
 
 
