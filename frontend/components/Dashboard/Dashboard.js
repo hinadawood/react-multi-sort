@@ -33,7 +33,6 @@ export class Dashboard extends React.Component {
         </ButtonToolbar>
         <p style={{marginTop:32}}>Place your sample below this line (Dashboard/Dashboard.js):</p>
         <hr style={{border: '1px solid black'}} />
-        <h1>Hina's Assignment</h1>
         <AssignmentTable/>
       </div>
     );

@@ -5,6 +5,7 @@ import {
   updateSortTableState,
   updateSortedData
 } from "./AssignmentTableAction";
+import "../../styles/common.css";
 
 export class AssignmentTable extends Component {
   constructor(props) {
@@ -150,26 +151,22 @@ export class AssignmentTable extends Component {
                 return <th key={id}>{colHeader}</th>;
               } else {
                 return (
-                  <th
-                    onClick={e => this.sortOn(e, colHeader)}
-                    key={id}
-                    className="hello"
-                  >
+                  <th onClick={e => this.sortOn(e, colHeader)} key={id}>
                     {colHeader}
                     {orderedMultiSortedColumnNameArray.length > 0 &&
                     table[colHeader].sortPosition !== 0 ? (
-                      <span style={{ color: "orange" }}>
+                      <span className="sort-number">
                         {table[colHeader].sortPosition}
                       </span>
                     ) : (
                       <span />
                     )}
                     {table[colHeader].sortStatus === "sorted-ascending" ? (
-                      <i className="fa fa-sort-up" />
+                      <i className="fa fa-sort-up icon-space" />
                     ) : table[colHeader].sortStatus === "sorted-descending" ? (
-                      <i className="fa fa-sort-down" />
+                      <i className="fa fa-sort-down icon-space" />
                     ) : (
-                      <i className="fa fa-sort" />
+                      <i className="fa fa-sort icon-space" />
                     )}
                   </th>
                 );
@@ -186,8 +183,11 @@ export class AssignmentTable extends Component {
   render() {
     let { data } = this.props;
     return (
-      <div>
+      <div className="table-container">
         <table className="table table-bordered">
+          <caption className="table-caption">
+            Hina's Assignment Multi Sort Table
+          </caption>
           {this.renderHeader()}
           <tbody>
             {data.map((row, idx) => {
