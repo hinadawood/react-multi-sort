@@ -4,9 +4,8 @@
 To build a table with multi column sort function
 
 ## Important Note ##
-- Please note for below requirement, I have used "Shift Key" as "Ctrl Key + Click" opens context menu on Mac. "Shift key + click" will work for both Windows and Mac.         
-
-- "5) And finally, after holding the SHIFT key down and clicking on the score, city and name in order, ‘score’ is primary sort(1), ‘city’ secondary sort(2) and ‘name’ third(3)"
+- "Shift key + click" to select a column for sorting.
+Example - After holding the SHIFT key down and clicking on the score, city and name in order, ‘score’ is primary sort(1), ‘city’ secondary sort(2) and ‘name’ third(3)"
 
 
 ## Checklist ##
@@ -36,6 +35,3 @@ Run `npm test` for unit testing the code. There are 12 passing testcases
 - frontend/test/AssignmentTable.test.js
 - frontend/test/AssignmentTableAction.test.js
 - frontend/styles/common.css
-
-
-
